@@ -4,7 +4,7 @@ requests = '0'
 app = Flask(__name__)
 
 @app.route('/')
-def hello_world():
+def example_route():
     requests = str(int(requests) + 1)
     return 'Hello from the example server! Request number: ' + requests
 
